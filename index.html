@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rock-paper-scissors game</title>
+    <style>
+      * {
+        line-height: 30px;
+        width: 390px;
+      }
+      #gamedev {
+        font-family: sans-serif;
+        border: 2px solid black;
+        border-radius: 25px;
+        padding: 90px;
+        background-image: url(img/Rock\ paper\ scissors\ containing\ paper\,\ rock\,\ and\ scissors.jpg);
+        text-align: center;
+        margin-left: 570px;
+        color: white;
+      }
+      #playertxt {
+        color: white;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .btn {
+        border-radius: 25px;
+        margin-block: 5px;
+        color: #0b55f4;
+        background-color: whitesmoke;
+      }
+      #resetbtn {
+        border-radius: 25px;
+        margin-block: 5px;
+        color: #0b55f4;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gamedev">
+      <h1><u>rock-paper-scissors game</u></h1>
+      <h1 class="gametext" id="playertxt">playerschoice:</h1>
+      <h1 class="gametext" id="computertxt">computerchoice:</h1>
+      <h1 class="gametext" id="resulttxt">result:</h1>
+
+      <h2>score</h2>
+      <p>player score:<span id="playerscore">0</span></p>
+      <p>computer score:<span id="computerscore">0</span></p>
+      <p>draw score:<span id="drawscore">0</span></p>
+
+      <button class="btn">rock</button>
+      <button class="btn">paper</button>
+      <button class="btn">scissors</button>
+      <br />
+      <button id="resetbtn">reset game</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
